@@ -14,6 +14,6 @@ http://www.mulesoft.org/schema/mule/secure-property-placeholder http://www.mules
     <secure-property-placeholder:config name="Secure_Property_Placeholder" key="${key}" location="config.${env}.properties" doc:name="Secure Property Placeholder"/>
     <flow name="echoFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/echo" doc:name="HTTP"/>
-        <set-payload value="It works and environment is ${environment} and password is ${password}" doc:name="Set Payload"/>
+        <set-payload value="Hi! It works and environment is ${environment} and password is ${password}" doc:name="Set Payload"/>
     </flow>
 </mule>
